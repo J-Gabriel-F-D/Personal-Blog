@@ -1,59 +1,19 @@
-# PersonalBlog
+# Personal_Blog
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Você precisa criar um blog pessoal onde possa escrever e publicar artigos. O blog terá duas seções: uma seção para convidados e uma seção para administradores.
 
-## Development server
+## Seção de Convidados — Uma lista de páginas que podem ser acessadas por qualquer pessoa:
 
-To start a local development server, run:
+- Página inicial: Esta página exibirá a lista de artigos publicados no blog.
 
-```bash
-ng serve
-```
+- Página do artigo: esta página exibirá o conteúdo do artigo junto com a data de publicação.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Seção Administrativa — são as páginas que somente você pode acessar para publicar, editar ou excluir artigos.
 
-## Code scaffolding
+- Painel: Esta página exibirá a lista de artigos publicados no blog junto com a opção de adicionar um novo artigo, editar um artigo existente ou excluir um artigo.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Adicionar página de artigo: esta página conterá um formulário para adicionar um novo artigo. O formulário terá campos como título, conteúdo e data de publicação.
 
-```bash
-ng generate component component-name
-```
+- Editar página do artigo: esta página conterá um formulário para editar um artigo existente. O formulário terá campos como título, conteúdo e data de publicação.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Link: https://roadmap.sh/projects/personal-blog
