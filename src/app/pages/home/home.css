@@ -1,0 +1,21 @@
+.title {
+  margin-bottom: 2rem;
+}
+
+.post {
+  padding-bottom: 1.5rem  ;
+  border-bottom: 1px solid #ddd;
+}
+
+.post h2 {
+  margin-bottom: 0.5rem;
+}
+
+.post p {
+  margin-bottom: 0.75rem;
+}
+
+.post span {
+  font-size: 0.875rem;
+  color: #666;
+}

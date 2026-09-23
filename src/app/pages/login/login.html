@@ -1,0 +1,43 @@
+<main>
+  <div class="container">
+    <section class="login">
+      <h1>Login</h1>
+
+      <form (ngSubmit)="login()">
+
+        <div>
+          <label for="username">Usuário</label>
+
+          <input
+            id="username"
+            type="text"
+            name="username"
+            [(ngModel)]="username"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="password">Senha</label>
+
+          <input
+            id="password"
+            type="password"
+            name="password"
+            [(ngModel)]="password"
+            required
+          >
+        </div>
+
+        @if (errorMessage) {
+          <p class="error">{{ errorMessage }}</p>
+        }
+
+        <button type="submit">
+          Entrar
+        </button>
+
+      </form>
+    </section>
+  </div>
+</main>

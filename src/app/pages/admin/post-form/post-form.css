@@ -1,0 +1,53 @@
+.post-form h1 {
+  margin-bottom: 2rem;
+}
+
+.post-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-form form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.post-form label {
+  font-weight: 600;
+}
+
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+  outline: none;
+  border-color: #222;
+}
+
+.post-form textarea {
+  resize: vertical;
+}
+
+.post-form button {
+  align-self: flex-start;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.post-form button:hover {
+  background: #444;
+}

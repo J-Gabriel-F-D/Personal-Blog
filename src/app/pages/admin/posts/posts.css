@@ -1,0 +1,61 @@
+.admin-posts .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.admin-posts h1 {
+  margin: 0;
+}
+
+.admin-posts .header a {
+  padding: 0.75rem 1.25rem;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.admin-posts .header a:hover {
+  background: #444;
+}
+
+.admin-posts table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-posts th,
+.admin-posts td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-posts th {
+  font-weight: 600;
+}
+
+.admin-posts td a {
+  margin-right: 1rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.admin-posts td a:hover {
+  text-decoration: underline;
+}
+
+.admin-posts button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #c62828;
+  font: inherit;
+  cursor: pointer;
+}
+
+.admin-posts button:hover {
+  text-decoration: underline;
+}

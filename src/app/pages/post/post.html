@@ -1,0 +1,21 @@
+<main>
+  <div class="container">
+
+    @if (post) {
+      <article class="post">
+
+        <h1>{{ post.title }}</h1>
+
+        <span>
+          {{ post.createdAt | date:'dd/MM/yyyy' }}
+        </span>
+
+        <p>
+          {{ post.content }}
+        </p>
+
+      </article>
+    }
+
+  </div>
+</main>

@@ -1,0 +1,58 @@
+<main>
+  <div class="container">
+
+    <section class="admin-posts">
+
+      <div class="header">
+        <h1>Posts</h1>
+
+        <a routerLink="/admin/posts/new">
+          Novo post
+        </a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Data</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          @for (post of posts; track post.id) {
+            <tr>
+              <td>{{ post.id }}</td>
+
+              <td>
+                {{ post.title }}
+              </td>
+
+              <td>
+                {{ post.createdAt | date:'dd/MM/yyyy' }}
+              </td>
+
+              <td>
+                <a [routerLink]="['/posts', post.id]">
+                  Visualizar
+                </a>
+
+                <a [routerLink]="['/admin/posts/edit', post.id]">
+                  Editar
+                </a>
+
+				<button (click)="deletePost(post.id)">
+				  Excluir
+				</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+
+    </section>
+
+  </div>
+</main>
